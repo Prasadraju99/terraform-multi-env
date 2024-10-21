@@ -22,5 +22,4 @@ variable "tags" {
 }
 
 variable "environment" {
- type = map 
 }

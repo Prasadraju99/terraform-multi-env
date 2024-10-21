@@ -1,9 +1,9 @@
-instance = {
-    mysql-dev = "t3.small"
-    backend = "t3.micro"
-    frontend = "t3.micro"
+instances = {
+  mysql-dev    = "t3.small"
+  backend-dev  = "t3.micro"
+  frontend-dev = "t3.micro"
 }
 
-tags ={
-    environment = "dev"
+tags = {
+  environment = "dev"
 }

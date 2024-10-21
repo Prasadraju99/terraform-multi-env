@@ -32,12 +32,12 @@ resource "aws_security_group" "allow_ssh_terraform" {
     protocol         = "tcp"
     cidr_blocks      = ["0.0.0.0/0"] # allow from everyone
     ipv6_cidr_blocks = ["::/0"]
-    tags = merge(
-      var.common_tags,
-      var.tags,
-      {
-        Name = "allow_ssh_${var.environment}"
-      }
-    )
   }
+  tags = merge(
+    var.common_tags,
+    var.tags,
+    {
+      Name = "allow_ssh_${var.environment}"
+    }
+  )
 }
